@@ -19,3 +19,8 @@
 {"message":"::ffff:127.0.0.1 - - [15/Jul/2020:18:54:00 +0000] \"PUT /api/users/5efa34474d7b4d4c84468d36 HTTP/1.1\" 401 43 \"http://localhost:3000/home/usuario/5efa34474d7b4d4c84468d36\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0\"\n","level":"info"}
 {"message":"15-07-2020T16:39:36-03:00 - 400 - Internal Error - Senha não confere  - /api/users/login - POST - ::ffff:127.0.0.1","level":"error"}
 {"message":"::ffff:127.0.0.1 - - [15/Jul/2020:19:39:36 +0000] \"POST /api/users/login HTTP/1.1\" 400 50 \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jul/2020:01:33:08 +0000] \"POST /api/users HTTP/1.1\" 404 149 \"-\" \"insomnia/2020.3.3\"\n","level":"info"}
+{"message":"15-07-2020T22:43:24-03:00 - 400 - Internal Error - TypeError: Cannot read property 'name' of null  - /api/users/login - POST - ::ffff:127.0.0.1","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [16/Jul/2020:01:43:24 +0000] \"POST /api/users/login HTTP/1.1\" 400 31 \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0\"\n","level":"info"}
+{"message":"15-07-2020T22:43:49-03:00 - 400 - Internal Error - TypeError: Cannot read property 'name' of null  - /api/users/login - POST - ::ffff:127.0.0.1","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [16/Jul/2020:01:43:49 +0000] \"POST /api/users/login HTTP/1.1\" 400 31 \"-\" \"insomnia/2020.3.3\"\n","level":"info"}
