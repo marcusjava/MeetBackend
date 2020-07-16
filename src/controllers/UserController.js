@@ -28,7 +28,7 @@ const login = async (req, res, next) => {
 					avatar_url:
 						process.env.STORAGE_TYPE == 'local'
 							? `http://localhost:3001/uploads/${user.avatar}`
-							: `https://podobucket.s3.us-east-2.amazonaws.com/${user.avatar}`,
+							: `https://meetback.herokuapp.com/uploads/${user.avatar}`,
 				};
 
 				jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: '24h' }, (error, token) => {
