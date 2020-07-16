@@ -57,7 +57,7 @@ UserSchema.plugin(populate);
 UserSchema.virtual('avatar_url').get(function () {
 	return process.env.STORAGE_TYPE == 'local'
 		? `http://localhost:3001/uploads/${this.avatar}`
-		: `https://podobucket.s3.us-east-2.amazonaws.com/${this.avatar}`;
+		: `https://meetback.herokuapp.com/uploads/${this.avatar}`;
 });
 
 module.exports = mongoose.model('User', UserSchema);
