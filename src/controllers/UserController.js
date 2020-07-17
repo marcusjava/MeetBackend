@@ -112,7 +112,7 @@ const update = async (req, res, next) => {
 		status,
 	};
 
-	if (password) {
+	if (password !== 'undefined') {
 		updatedUser.password = password;
 		bcrypt.genSalt(10, (error, salt) => {
 			bcrypt.hash(updatedUser.password, salt, (error, hash) => {
