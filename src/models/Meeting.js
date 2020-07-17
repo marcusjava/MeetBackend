@@ -21,8 +21,9 @@ const MeetingSchema = mongoose.Schema(
 		],
 		room_link: {
 			type: String,
+			default: '',
 		},
-		observations: { type: String },
+		observations: { type: String, default: '' },
 		status: { type: String, enum: ['Agendada', 'Realizada', 'Em andamento', 'Cancelada'], default: 'Agendada' },
 		createdBy: {
 			type: mongoose.Types.ObjectId,

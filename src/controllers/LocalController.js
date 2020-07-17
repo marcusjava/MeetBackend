@@ -1,6 +1,12 @@
 const Local = require('../models/Local');
+const validator = require('../validation/local');
 
 const save = async (req, res, next) => {
+	const { errors, isValid } = validator(req.body);
+
+	if (!isValid) {
+		return next({ status: 400, message: errors });
+	}
 	const { name, email, address, contact1, contact2, ip } = req.body;
 
 	const local = await Local.findOne({ $or: [{ email }, { name }] });

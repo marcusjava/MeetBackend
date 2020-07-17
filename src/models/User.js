@@ -17,8 +17,8 @@ const UserSchema = mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		contact1: { type: String },
-		contact2: { type: String },
+		contact1: { type: String, default: '' },
+		contact2: { type: String, default: '' },
 		password: {
 			type: String,
 			required: true,
@@ -57,7 +57,7 @@ UserSchema.plugin(populate);
 UserSchema.virtual('avatar_url').get(function () {
 	return process.env.STORAGE_TYPE == 'local'
 		? `http://localhost:3001/uploads/${this.avatar}`
-		: `https://meetback.herokuapp.com/uploads/${this.avatar}`;
+		: `https://meetuploads.s3.us-east-2.amazonaws.com/${user.avatar}`;
 });
 
 module.exports = mongoose.model('User', UserSchema);
