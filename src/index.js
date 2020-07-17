@@ -79,6 +79,6 @@ const expressServer = app.listen(process.env.PORT || 3001, () => {
 	console.log(`Server started at port 3001`);
 });
 
-global.io = socketIO(expressServer);
-require('./routes/chatsIO');
+io = socketIO(expressServer);
+require('./routes/chatsIO')(io);
 //ChatController(app);
