@@ -18,8 +18,8 @@ const UserController = require('../controllers/UserController');
 // - passport security - OK
 routes.post(
 	'/register',
-	passport.authenticate('jwt', { session: false }),
-	isAdmin,
+	// passport.authenticate('jwt', { session: false }),
+	// isAdmin,
 	upload.single('avatar'),
 	UserController.register
 );
