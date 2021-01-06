@@ -13,7 +13,7 @@
 		"@synapsestudios/winston-sentry": "^1.1.0",
 		"async": "^2.0.0",
 		"aws-sdk": "^2.701.0",
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"bcryptjs": "^2.4.3",
 		"body-parser": "^1.19.0",
 		"celebrate": "^12.1.1",
